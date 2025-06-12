@@ -16,7 +16,7 @@ Pastikan Anda sudah menginstal:
 
 - Node.js >= 16.x
 - npm atau yarn
-- Backend Laravel (lihat [Belara1 Backend](#) untuk setup backend)
+
 
 ## 🛠️ Instalasi
 
