@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Belara1 Frontend (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ini adalah bagian frontend dari aplikasi Belara1, yang dikembangkan menggunakan React.js. Frontend ini terintegrasi dengan backend Laravel yang berada di repositori terpisah.
 
-## Available Scripts
+## 🚀 Fitur
 
-In the project directory, you can run:
+- Dibangun dengan React.js
+- Struktur proyek modern dan modular
+- Integrasi API ke backend Laravel
+- Manajemen state dan komponen yang terstruktur
+- Mendukung styling menggunakan CSS/SCSS/Library (tergantung implementasi)
 
-### `npm start`
+## 📦 Prasyarat
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pastikan Anda sudah menginstal:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js >= 16.x
+- npm atau yarn
+- Backend Laravel (lihat [Belara1 Backend](#) untuk setup backend)
 
-### `npm test`
+## 🛠️ Instalasi
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone repository ini**
+   ```bash
+   git clone https://github.com/username/fereact.git
+   cd fereact
+   ```
 
-### `npm run build`
+2. **Install dependensi**
+   ```bash
+   npm install
+   ```
+   atau jika menggunakan Yarn:
+   ```bash
+   yarn install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Konfigurasi koneksi ke backend (jika diperlukan)**
+   
+   Buka file konfigurasi (misalnya `.env`, `api.js`, atau sesuai struktur proyek), dan sesuaikan URL API backend:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   REACT_APP_API_URL=http://localhost:8000/api
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Jalankan aplikasi**
+   ```bash
+   npm start
+   ```
+   Aplikasi akan berjalan di `http://localhost:3000`
 
-### `npm run eject`
+## 📁 Struktur Proyek
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/` — Berisi semua source code React
+  - `components/` — Komponen UI
+  - `pages/` — Halaman utama
+  - `services/` — Koneksi API dan logic lainnya
+  - `App.js` — Entry point utama
+- `public/` — File statis
+- `.env` — Konfigurasi variabel environment (opsional)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🧪 Testing (Jika Ada)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Jika tersedia testing, jalankan dengan:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm test
+```
 
-## Learn More
+## 🔗 Integrasi Backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frontend ini dibuat untuk berkomunikasi langsung dengan Laravel backend melalui REST API. Pastikan backend Laravel sudah aktif dan endpoint API sesuai dengan konfigurasi di frontend.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📄 Lisensi
 
-### Code Splitting
+Proyek ini menggunakan lisensi [MIT](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Dibuat dengan ❤️ menggunakan React.js dan Laravel.
